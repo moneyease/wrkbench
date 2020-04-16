@@ -1,12 +1,12 @@
 # wrkbench
 
-This is a simple shell script to create lua file to test http multipart upload.
+This is a simple script to create lua file to test http multipart upload.
 
 ## Example
 
 For example you want to post N files using multipart
 ```
- ./wrkbench <file1> <file2> .. <fileN>
+ ./wrkbench.py -F <file1> -F <file2> -H "Expect:--http1.1" -o /tmp
 ```
 This will create a folder ```/tmp/wrkbench-<seconds-since-epoch>```
 
